@@ -1,7 +1,7 @@
 ons.bootstrap(); // アプリの初期化
 
 ons.ready(function() { // アプリ起動時の処理
-  setInterval(getSpeed, 1000);
+  setInterval(getSpeed, 2000);
 });
 
 function getSpeed(position) {
