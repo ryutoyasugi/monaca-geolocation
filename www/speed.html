@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta http-equiv="Content-Security-Policy" content="default-src * data:; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+  <link rel="stylesheet" href="components/loader.css">
+  <link rel="stylesheet" href="lib/onsenui/css/onsenui.css">
+  <link rel="stylesheet" href="lib/onsenui/css/onsen-css-components.css">
+  <link rel="stylesheet" href="css/speed.css">
+</head>
+<body>
+  <!-- https://syncer.jp/how-to-use-geolocation-api -->
+  <ons-page>
+    <ons-toolbar>
+      <div class="left" style="margin-left: 10px;">
+        <a href="index.html">Home</a>
+      </div>
+      <div class="center">geolocation app</div>
+    </ons-toolbar>
+
+    <div class="speed">
+      <span id="speed">0.0</span> km/h
+    </div>
+  </ons-page>
+
+  <script src="lib/onsenui/js/onsenui.min.js"></script>
+  <script src="components/loader.js"></script>
+  <script src="js/speed.js"></script>
+</body>
+</html>

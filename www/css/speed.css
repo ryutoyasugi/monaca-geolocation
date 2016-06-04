@@ -1,0 +1,16 @@
+@font-face {
+  font-family: 'digital';
+  src: url('../fonts/jd_led3.ttf') format('truetype');
+}
+
+.page__background {
+  background-color: #000;
+}
+
+.speed {
+  color: #0FF;
+  font-family: 'digital';
+  font-size: 50px;
+  text-align: center;
+  margin-top: 50px;
+}
