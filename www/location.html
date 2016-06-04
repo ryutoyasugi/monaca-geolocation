@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta http-equiv="Content-Security-Policy" content="default-src * data:; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+  <link rel="stylesheet" href="components/loader.css">
+  <link rel="stylesheet" href="lib/onsenui/css/onsenui.css">
+  <link rel="stylesheet" href="lib/onsenui/css/onsen-css-components.css">
+  <link rel="stylesheet" href="css/location.css">
+</head>
+<body>
+  <!-- クラウドでできるHTML5ハイブリッドアプリ開発 P.239 -->
+  <ons-page>
+    <ons-toolbar>
+      <div class="left" style="margin-left: 10px;">
+        <a href="index.html">Home</a>
+      </div>
+      <div class="center">geolocation app</div>
+    </ons-toolbar>
+
+    <div id="map"></div>
+
+    <ons-bottom-toolbar>
+      <ons-toolbar-button onClick="putMarker()">
+        <ons-icon icon="fa-map-marker"></ons-icon>
+        現在位置をマーク
+      </ons-toolbar-button>
+    </ons-bottom-toolbar>
+
+  </ons-page>
+
+  <ons-modal var="myModal">
+    <span class="myModal">位置情報を取得中...</span>
+  </ons-modal>
+
+  <script src="lib/onsenui/js/onsenui.min.js"></script>
+  <script src="components/loader.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0SIwFw4ZbY5OZt_DRAyjqE72VssdnsYM&callback=initMap"></script>
+  <script src="js/location.js"></script>
+</body>
+</html>
